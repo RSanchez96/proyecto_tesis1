@@ -1,0 +1,225 @@
+Columna,Tipo,Descripción
+Site Name,object,Nombre del sitio o estación de la red dorsal 
+year,int64,Año calendario de la medición
+week,int64,Número de semana ISO (1–52) de la medición
+uptime_min,float64,Porcentaje mínimo de disponibilidad semanal entre tecnologías
+uptime_mean,float64,Promedio de disponibilidad semanal entre tecnologías
+uptime_max,float64,Porcentaje máximo de disponibilidad semanal entre tecnologías
+uptime_var,float64,Varianza de la disponibilidad semanal entre tecnologías
+n_tech,int64,Número de tecnologías (2G/3G/4G/etc.) que reportaron para el sitio en la semana
+FEC_FIN,object,Fecha de fin de la semana (dd/mm/aaaa)
+REGION,object,Ubicación geográfica de la estación
+SUB_REGION,object,Ubicación geográfica de la estación
+PROVINCIA,object,Ubicación geográfica de la estación 
+DISTRITO,object,Ubicación geográfica de la estación 
+ID,object,Identificador único de la estación 
+AVAILABILITY_NUM,float64,Numerador y denominador usados para calcular uptime_pct original
+AVAILABILITY_DEN,int64,Numerador y denominador usados para calcular uptime_pct original
+COND_RADAR,object,(Descripción pendiente)
+SITE_norm,object,Nombre del sitio o estación de la red dorsal
+ZONA,object,Ubicación geográfica de la estación (No incluido en dataset adjunto por confidencialidad)
+n_alarms,float64,Número total de alarmas registradas en la semana
+total_dur_min,float64,Duración acumulada (en minutos) de caídas o cortes en la semana
+total_dur_caida,float64,Duración acumulada (en minutos) de caídas o cortes en la semana
+total_dur_corte_ene,float64,Duración acumulada (en minutos) de caídas o cortes en la semana
+cnt_fl_1-Critical,float64,Número de alarmas de gravedad 1-Critical en la semana
+cnt_fl_2-High,float64,Número de alarmas de gravedad 2-High en la semana
+cnt_fl_3-Medium,float64,Número de alarmas de gravedad 3-Medium en la semana
+cnt_fl_4-Low,float64,Número de alarmas de gravedad 4-Low en la semana
+cnt_tc_Alarmas Externas,float64,Conteo de alarmas de tipo 'Alarmas Externas' clasificadas por tipo_causa
+cnt_tc_Alarmas en Gestor,float64,Conteo de alarmas de tipo 'Alarmas en Gestor' clasificadas por tipo_causa
+cnt_tc_Caida,float64,Conteo de alarmas de tipo 'Caida' clasificadas por tipo_causa
+cnt_tc_Corte_Energia,float64,Conteo de alarmas de tipo 'Corte_Energia' clasificadas por tipo_causa
+cnt_tc_Energia,float64,Conteo de alarmas de tipo 'Energia' clasificadas por tipo_causa
+cnt_tc_MBTS,float64,Conteo de alarmas de tipo 'MBTS' clasificadas por tipo_causa
+cnt_tc_TX,float64,Conteo de alarmas de tipo 'TX' clasificadas por tipo_causa
+cnt_tsc_Aire Acondiconado,float64,Conteo de alarmas de tipo 'Aire Acondicionado' clasificadas por tipo_causa_especifica
+cnt_tsc_Aire Acondiconado - Alta Temperatura,float64,Conteo de alarmas de tipo 'Aire Acondiconado - Alta Temperatura' clasificadas por tipo_causa_especifica
+cnt_tsc_Aire Acondiconado - Alta Temperatura Gabinete TX1,float64,Conteo de alarmas de tipo 'Aire Acondiconado - Alta Temperatura Gabinete TX1' clasificadas por tipo_causa_especifica
+cnt_tsc_Aire Acondiconado - Alta Temperatura Gabinete TX2,float64,Conteo de alarmas de tipo 'Aire Acondiconado - Alta Temperatura Gabinete TX2' clasificadas por tipo_causa_especifica
+cnt_tsc_Aire Acondiconado - Alta Temperatura Rectificador AA1,float64,Conteo de alarmas de tipo 'Aire Acondiconado - Alta Temperatura Rectificador AA1' clasificadas por tipo_causa_especifica
+cnt_tsc_Aire Acondiconado - Rectificador 1,float64,Conteo de alarmas de tipo 'Aire Acondiconado - Rectificador 1' clasificadas por tipo_causa_especifica
+cnt_tsc_Alto - Bajo Voltaje,float64,Conteo de alarmas de tipo 'Alto - Bajo Voltaje' clasificadas por tipo_causa_especifica
+cnt_tsc_Bajo Nivel Combustible Generador,float64,Conteo de alarmas de tipo 'Bajo Nivel Combustible Generador' clasificadas por tipo_causa_especifica
+cnt_tsc_Bajo Voltaje DC 48,float64,Conteo de alarmas de tipo 'Bajo Voltaje DC 48' clasificadas por tipo_causa_especifica
+cnt_tsc_Bateria Anormal,float64,Conteo de alarmas de tipo 'Bateria Anormal' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Parcial 2G - Cell Unusable,float64,Conteo de alarmas de tipo 'Caida Parcial 2G - Cell Unusable' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Parcial 2G - Fuera de Servicio,float64,Conteo de alarmas de tipo 'Caida Parcial 2G - Fuera de Servicio' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Parcial 3G - Cell Unusable,float64,Conteo de alarmas de tipo 'Caida Parcial 3G - Cell Unusable' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Parcial 3G - UMTS Unavailable,float64,Conteo de alarmas de tipo 'Caida Parcial 3G - UMTS Unavailable' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Parcial 4G,float64,Conteo de alarmas de tipo 'Caida Parcial 4G' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Parcial 5G,float64,Conteo de alarmas de tipo 'Caida Parcial 5G' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Total 2G,float64,Conteo de alarmas de tipo 'Caida Total 2G' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Total 3G,float64,Conteo de alarmas de tipo 'Caida Total 3G' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Total 4G,float64,Conteo de alarmas de tipo 'Caida Total 4G' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Total BTS,float64,Conteo de alarmas de tipo 'Caida Total BTS' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Total BTS - Alarmas Relacionadas,float64,Conteo de alarmas de tipo 'Caida Total BTS - Alarmas Relacionadas' clasificadas por tipo_causa_especifica
+cnt_tsc_Caida Total 5G,float64,Conteo de alarmas de tipo 'Caida Total 5G' clasificadas por tipo_causa_especifica
+cnt_tsc_Core,float64,Conteo de alarmas de tipo 'Core' clasificadas por tipo_causa_especifica
+cnt_tsc_Corte Energia Programado,float64,Conteo de alarmas de tipo 'Corte Energia Programado' clasificadas por tipo_causa_especifica
+cnt_tsc_Corte de Energia,float64,Conteo de alarmas de tipo 'Corte de Energia' clasificadas por tipo_causa_especifica
+cnt_tsc_Energia Comercial,float64,Conteo de alarmas de tipo Energia Comercial' clasificadas por tipo_causa_especifica
+cnt_tsc_Energia LTE-TDD,float64,Conteo de alarmas de tipo 'Energia LTE-TDD' clasificadas por tipo_causa_especifica
+cnt_tsc_FALLA AIRE ACONDICIONADO,float64,Conteo de alarmas de tipo 'FALLA AIRE ACONDICIONADO' clasificadas por tipo_causa_especifica
+cnt_tsc_Falla Bateria,float64,Conteo de alarmas de tipo 'Falla Bateria' clasificadas por tipo_causa_especifica
+cnt_tsc_Falla Energia 65033,float64,Conteo de alarmas de tipo 'Falla Energia 65033' clasificadas por tipo_causa_especifica
+cnt_tsc_Falla Energia 65063,float64,Conteo de alarmas de tipo 'Falla Energia 65063' clasificadas por tipo_causa_especifica
+cnt_tsc_Falla Generador,float64,Conteo de alarmas de tipo 'Falla Generador' clasificadas por tipo_causa_especifica
+cnt_tsc_Falla de fase electrica,float64,Conteo de alarmas de tipo 'Falla de fase electrica' clasificadas por tipo_causa_especifica
+cnt_tsc_Falla fusible,float64,Conteo de alarmas de tipo 'Falla fusible' clasificadas por tipo_causa_especifica
+cnt_tsc_Generador Operativo,float64,Conteo de alarmas de tipo 'Generador Operativo' clasificadas por tipo_causa_especifica
+cnt_tsc_MW,float64,Conteo de alarmas de tipo 'MW' clasificadas por tipo_causa_especifica
+cnt_tsc_PERDIDA DE GESTION,float64,Conteo de alarmas de tipo 'PERDIDA DE GESTION' clasificadas por tipo_causa_especifica
+cnt_tsc_PERDIDA DE GESTIÓN,float64,Conteo de alarmas de tipo 'PERDIDA DE GESTIÓN' clasificadas por tipo_causa_especifica
+cnt_tsc_Puerta Abierta,float64,Conteo de alarmas de tipo 'Puerta Abierta' clasificadas por tipo_causa_especifica
+cnt_tsc_Puerta Abierta - Gabinete TX1,float64,Conteo de alarmas de tipo 'Puerta Abierta - Gabinete TX1' clasificadas por tipo_causa_especifica
+cnt_tsc_Puerta Abierta Huawei,float64,Conteo de alarmas de tipo 'Puerta Abierta Huawei' clasificadas por tipo_causa_especifica
+cnt_tsc_RF,float64,Conteo de alarmas de tipo 'RF' clasificadas por tipo_causa_especifica
+cnt_tsc_RRU,float64,Conteo de alarmas de tipo 'RRU' clasificadas por tipo_causa_especifica
+cnt_tsc_Rectificador MCU - Alarma Urgente Rectificador 2,float64,Conteo de alarmas de tipo 'Alarma Urgente Rectificador 2' clasificadas por tipo_causa_especifica
+cnt_tsc_Rectificador MCU - Alta Temperatura Rectifcador VF1,float64,Conteo de alarmas de tipo 'Rectificador MCU - Alta Temperatura Rectifcador VF1' clasificadas por tipo_causa_especifica
+cnt_tsc_Rectificador MCU - Falla Rectificador,float64,Conteo de alarmas de tipo 'Rectificador MCU - Falla Rectificador' clasificadas por tipo_causa_especifica
+cnt_tsc_Sensor de Humo - Gabinete TX1,float64,Conteo de alarmas de tipo 'Sensor de Humo - Gabinete TX1' clasificadas por tipo_causa_especifica
+cnt_tsc_TX DWDM-MW,float64,Conteo de alarmas de tipo 'TX DWDM-MW' clasificadas por tipo_causa_especifica
+cnt_tsc_TX-DWDM,float64,Conteo de alarmas de tipo 'TX-DWDM' clasificadas por tipo_causa_especifica
+cnt_tsc_Traslados de Repuestos,float64,Conteo de alarmas de tipo 'Traslados de Repuestos' clasificadas por tipo_causa_especifica
+cnt_plat_CANCELADO,float64,Conteo de alarmas plataforma 'CANCELADO'
+cnt_plat_CORTE ENERGIA,float64,Conteo de alarmas plataforma 'CORTE ENERGIA'
+cnt_plat_Corte_Energia,float64,Conteo de alarmas plataforma 'Corte_Energia'
+cnt_plat_ENERGIA,float64,Conteo de alarmas plataforma 'ENERGIA'
+cnt_plat_Energia,float64,Conteo de alarmas plataforma 'Energia'
+cnt_plat_MBTS,float64,Conteo de alarmas plataforma 'MBTS'
+cnt_plat_PEXT - Atenuacion de FO,float64,Conteo de alarmas plataforma 'PEXT - Atenuacion de FO'
+cnt_plat_PEXT - Corte de FO,float64,Conteo de alarmas plataforma 'PEXT - Corte de FO'
+cnt_plat_PEXT - Falsa Averia,float64,Conteo de alarmas plataforma 'PEXT - Falsa Averia'
+cnt_plat_RADIO,float64,Conteo de alarmas plataforma 'RADIO'
+cnt_plat_RED - TRANSPORTE DE RED,float64,Conteo de alarmas plataforma 'RED - TRANSPORTE DE RED'
+cnt_plat_SEGURIDAD,float64,Conteo de alarmas plataforma 'SEGURIDAD'
+cnt_plat_SISTEMA ELECTRICO,float64,Conteo de alarmas plataforma 'SISTEMA ELECTRICO'
+cnt_plat_TX,float64,Conteo de alarmas plataforma 'TX'
+cnt_rc_ABASTECIMIENTO DE COMBUSTIBLE,float64,Conteo de alarmas de tipo 'ABASTECIMIENTO DE COMBUSTIBLE' clasificadas por root_cause
+cnt_rc_ACTUA RESPALDO BATERIAS,float64,Conteo de alarmas de tipo 'ACTUA RESPALDO BATERIAS' clasificadas por root_cause
+cnt_rc_ALARMA CLAREADA,float64,Conteo de alarmas de tipo 'ALARMA CLAREADA' clasificadas por root_cause
+cnt_rc_ALTERNADOR 12 VDC,float64,Conteo de alarmas de tipo 'ALTERNADOR 12 VDC' clasificadas por root_cause
+cnt_rc_ARRANCADOR 12 VDC,float64,Conteo de alarmas de tipo 'ARRANCADOR 12 VDC' clasificadas por root_cause
+cnt_rc_AVR,float64,Conteo de alarmas de tipo 'AVR' clasificadas por root_cause
+cnt_rc_BATERIA,float64,Conteo de alarmas de tipo 'BATERIA' clasificadas por root_cause
+cnt_rc_BATERIAS,float64,Conteo de alarmas de tipo 'BATERIAS' clasificadas por root_cause
+cnt_rc_BBU,float64,Conteo de alarmas de tipo 'BBU' clasificadas por root_cause
+cnt_rc_BOMBA,float64,Conteo de alarmas de tipo 'BOMBA' clasificadas por root_cause
+cnt_rc_BREACKER DC,float64,Conteo de alarmas de tipo 'BREACKER DC' clasificadas por root_cause
+cnt_rc_BREAKER,float64,Conteo de alarmas de tipo 'BREAKER' clasificadas por root_cause
+cnt_rc_CAMARA VIDEO,float64,Conteo de alarmas de tipo 'CAMARA VIDEO' clasificadas por root_cause
+cnt_rc_CAMBIO BATERIAS,float64,Conteo de alarmas de tipo 'CAMBIO BATERIAS' clasificadas por root_cause
+cnt_rc_CAMBIO FILTRO,float64,Conteo de alarmas de tipo 'CAMBIO FILTRO' clasificadas por root_cause
+cnt_rc_CAMBIO MANGUERA,float64,Conteo de alarmas de tipo 'CAMBIO MANGUERA' clasificadas por root_cause
+cnt_rc_CAPACITOR,float64,Conteo de alarmas de tipo 'CAPACITOR' clasificadas por root_cause
+cnt_rc_CESE AUTOMATICO,float64,Conteo de alarmas de tipo 'CESE AUTOMATICO' clasificadas por root_cause
+cnt_rc_CHAPA ELECTRONICA,float64,Conteo de alarmas de tipo 'CHAPA ELECTRONICA' clasificadas por root_cause
+cnt_rc_COMPRESOR,float64,Conteo de alarmas de tipo 'COMPRESOR' clasificadas por root_cause
+cnt_rc_CONDENSADOR,float64,Conteo de alarmas de tipo 'CONDENSADOR' clasificadas por root_cause
+cnt_rc_CONECTORES SUELTOS,float64,Conteo de alarmas de tipo 'CONECTORES SUELTOS' clasificadas por root_cause
+cnt_rc_CONTACTOR,float64,Conteo de alarmas de tipo 'CONTACTOR' clasificadas por root_cause
+cnt_rc_CONTROL TTA,float64,Conteo de alarmas de tipo 'CONTROL TTA' clasificadas por root_cause
+cnt_rc_CONTROLADOR SISTEMA SEGURIDAD,float64,Conteo de alarmas de tipo 'CONTROLADOR SISTEMA SEGURIDAD' clasificadas por root_cause
+cnt_rc_CORTE MAYOR A 12HRS,float64,Conteo de alarmas de tipo 'CORTE MAYOR A 12HRS' clasificadas por root_cause
+cnt_rc_CORTE MAYOR A 4HRS Y MENOR A 8HRS,float64,Conteo de alarmas de tipo 'CORTE MAYOR A 4HRS Y MENOR A 8HRS' clasificadas por root_cause
+cnt_rc_CORTE MAYOR A 8HRS Y MENOR A 12HRS,float64,Conteo de alarmas de tipo 'CORTE MAYOR A 8HRS Y MENOR A 12HRS' clasificadas por root_cause
+cnt_rc_CORTE MENOR 4 HRS  BAJA AUTONOMIA - AMPLIAR BATERIA,float64,Conteo de alarmas de tipo 'CORTE MENOR 4 HRS  BAJA AUTONOMIA - AMPLIAR BATERIA' clasificadas por root_cause
+cnt_rc_CORTE MENOR 4 HRS  BAJA AUTONOMIA - PLAZA/POSTE,float64,Conteo de alarmas de tipo 'CORTE MENOR 4 HRS  BAJA AUTONOMIA - PLAZA/POSTE' clasificadas por root_cause
+cnt_rc_CORTE MENOR 4 HRS  BAJA AUTONOMIA - SIN BANCOS,float64,Conteo de alarmas de tipo 'CORTE MENOR 4 HRS  BAJA AUTONOMIA - SIN BANCOS' clasificadas por root_cause
+cnt_rc_CORTE MENOR 4 HRS BAJA AUTONOMIA - BATERIA AVERIADA,float64,Conteo de alarmas de tipo 'CORTE MENOR 4 HRS BAJA AUTONOMIA - BATERIA AVERIADA' clasificadas por root_cause
+cnt_rc_DWDM-CAMBIO EQUIPAMIENTO,float64,Conteo de alarmas de tipo 'DWDM-CAMBIO EQUIPAMIENTO' clasificadas por root_cause
+cnt_rc_DWDM-CAMBIO_AJUSTE CONECTORES O CABLES,float64,Conteo de alarmas de tipo 'DWDM-CAMBIO_AJUSTE CONECTORES O CABLES' clasificadas por root_cause
+cnt_rc_DWDM-CORRECION DE AVERIAS POR TERCEROS,float64,Conteo de alarmas de tipo 'DWDM-CORRECION DE AVERIAS POR TERCEROS' clasificadas por root_cause
+cnt_rc_DWDM-EMPALME FO,float64,Conteo de alarmas de tipo 'DWDM-EMPALME FO' clasificadas por root_cause
+cnt_rc_DWDM-FALSA ALARMA,float64,Conteo de alarmas de tipo 'DWDM-FALSA ALARMA' clasificadas por root_cause
+cnt_rc_DWDM-REINSERTAR DE TARJETAS,float64,Conteo de alarmas de tipo 'DWDM-REINSERTAR DE TARJETAS' clasificadas por root_cause
+cnt_rc_DWDM-REPARACION_REVISION EQUIPOS DE ENERGIA,float64,Conteo de alarmas de tipo 'DWDM-REPARACION_REVISION EQUIPOS DE ENERGIA' clasificadas por root_cause
+cnt_rc_DWDM-SOLUCION LADO NODO,float64,Conteo de alarmas de tipo 'DWDM-SOLUCION LADO NODO' clasificadas por root_cause
+cnt_rc_Definitiva Cambio de Cable Drop,float64,Conteo de alarmas de tipo 'Definitiva Cambio de Cable Drop' clasificadas por root_cause
+cnt_rc_Definitiva Cambio de Seccion + 2 puntos de fusion,float64,Conteo de alarmas de tipo 'Definitiva Cambio de Seccion + 2 puntos de fusion' clasificadas por root_cause
+cnt_rc_Definitiva Derivacion a PINT,float64,Conteo de alarmas de tipo 'Definitiva Derivacion a PINT' clasificadas por root_cause
+cnt_rc_Definitiva Fusion de Pictail,float64,Conteo de alarmas de tipo 'Definitiva Fusion de Pictail' clasificadas por root_cause
+cnt_rc_Definitiva Limpieza de Conectores,float64,Conteo de alarmas de tipo 'Definitiva Limpieza de Conectores' clasificadas por root_cause
+cnt_rc_Definitiva Migracion,float64,Conteo de alarmas de tipo 'Definitiva Migracion' clasificadas por root_cause
+cnt_rc_Definitiva Normalizacion de la PEXT,float64,Conteo de alarmas de tipo 'Definitiva Normalizacion de la PEXT' clasificadas por root_cause
+cnt_rc_Definitiva Reinstalacion de Caja Panduit,float64,Conteo de alarmas de tipo 'Definitiva Reinstalacion de Caja Panduit' clasificadas por root_cause
+cnt_rc_Definitiva Sangrado 1 Punto de Fusion,float64,Conteo de alarmas de tipo 'Definitiva Sangrado 1 Punto de Fusion' clasificadas por root_cause
+cnt_rc_Definitiva Uso de Reserva mas 1 punto de fusion,float64,Conteo de alarmas de tipo 'Definitiva Uso de Reserva mas 1 punto de fusion' clasificadas por root_cause
+cnt_rc_Definitva Cambio de FAT-XBOX-HBOX etc.,float64,Conteo de alarmas de tipo 'Definitva Cambio de FAT-XBOX-HBOX etc.' clasificadas por root_cause
+cnt_rc_EN IMPLEMENTACION,float64,Conteo de alarmas de tipo 'EN IMPLEMENTACION' clasificadas por root_cause
+cnt_rc_ERROR CONFIGURACION,float64,Conteo de alarmas de tipo 'ERROR CONFIGURACION' clasificadas por root_cause
+cnt_rc_EVAPORADOR,float64,Conteo de alarmas de tipo 'EVAPORADOR' clasificadas por root_cause
+cnt_rc_FALSA ALARMA - CORTE ENERGIA,float64,Conteo de alarmas de tipo 'FALSA ALARMA - CORTE ENERGIA' clasificadas por root_cause
+cnt_rc_FALSA ALARMA - MBTS,float64,Conteo de alarmas de tipo 'FALSA ALARMA - MBTS' clasificadas por root_cause
+cnt_rc_FALSA ALARMAS,float64,Conteo de alarmas de tipo 'FALSA ALARMAS' clasificadas por root_cause
+cnt_rc_FEMTOCELDA - SMALL CELLS,float64,Conteo de alarmas de tipo 'FEMTOCELDA - SMALL CELLS' clasificadas por root_cause
+cnt_rc_GENERADOR 220 VAC,float64,Conteo de alarmas de tipo 'GENERADOR 220 VAC' clasificadas por root_cause
+cnt_rc_INVERSOR,float64,Conteo de alarmas de tipo 'INVERSOR' clasificadas por root_cause
+cnt_rc_JUMPER,float64,Conteo de alarmas de tipo 'JUMPER' clasificadas por root_cause
+cnt_rc_KPIS,float64,Conteo de alarmas de tipo 'KPIS' clasificadas por root_cause
+cnt_rc_LMT,float64,Conteo de alarmas de tipo 'LMT' clasificadas por root_cause
+cnt_rc_MANTENIMIENTO,float64,Conteo de alarmas de tipo 'MANTENIMIENTO' clasificadas por root_cause
+cnt_rc_MODULO DE CONTROL GE,float64,Conteo de alarmas de tipo 'MODULO DE CONTROL GE' clasificadas por root_cause
+cnt_rc_MODULO RECTIFICADOR,float64,Conteo de alarmas de tipo 'MODULO RECTIFICADOR' clasificadas por root_cause
+cnt_rc_MW-CAMBIO EQUIPAMIENTO,float64,Conteo de alarmas de tipo 'MW-CAMBIO EQUIPAMIENTO' clasificadas por root_cause
+cnt_rc_MW-CAMBIO_AJUSTE CONECTORES O CABLES,float64,Conteo de alarmas de tipo 'MW-CAMBIO_AJUSTE CONECTORES O CABLES' clasificadas por root_cause
+cnt_rc_MW-CORRECION DE AVERIAS POR TERCEROS,float64,Conteo de alarmas de tipo 'MW-CORRECION DE AVERIAS POR TERCEROS' clasificadas por root_cause
+cnt_rc_MW-FALSA ALARMA,float64,Conteo de alarmas de tipo 'MW-FALSA ALARMA' clasificadas por root_cause
+cnt_rc_MW-REINSERTAR DE TARJETAS,float64,Conteo de alarmas de tipo 'MW-REINSERTAR DE TARJETAS' clasificadas por root_cause
+cnt_rc_MW-REPARACION_REVISION EQUIPOS DE ENERGIA,float64,Conteo de alarmas de tipo 'MW-REPARACION_REVISION EQUIPOS DE ENERGIA' clasificadas por root_cause
+cnt_rc_NO REFLEJA ALARMAS,float64,Conteo de alarmas de tipo 'NO REFLEJA ALARMAS' clasificadas por root_cause
+cnt_rc_NODO AFECTADO - CORTE ENERGIA,float64,Conteo de alarmas de tipo 'NODO AFECTADO - CORTE ENERGIA' clasificadas por root_cause
+cnt_rc_PROTECTOR DE VOLTAJE,float64,Conteo de alarmas de tipo 'PROTECTOR DE VOLTAJE' clasificadas por root_cause
+cnt_rc_PRUEBAS,float64,Conteo de alarmas de tipo 'PRUEBAS' clasificadas por root_cause
+cnt_rc_Provisional Cambio de Ruta,float64,Conteo de alarmas de tipo 'Provisional Cambio de Ruta' clasificadas por root_cause
+cnt_rc_Provisional Migracion,float64,Conteo de alarmas de tipo 'Provisional Migracion' clasificadas por root_cause
+cnt_rc_Provisional Sangrado 1 Punto de Fusion,float64,Conteo de alarmas de tipo 'Provisional Sangrado 1 Punto de Fusion' clasificadas por root_cause
+cnt_rc_RADIADOR,float64,Conteo de alarmas de tipo 'RADIADOR' clasificadas por root_cause
+cnt_rc_RECARGA DE REFRIGERANTE,float64,Conteo de alarmas de tipo 'RECARGA DE REFRIGERANTE' clasificadas por root_cause
+cnt_rc_RECLAMO PROPIETARIO,float64,Conteo de alarmas de tipo 'RECLAMO PROPIETARIO' clasificadas por root_cause
+cnt_rc_RECTIFICADOR,float64,Conteo de alarmas de tipo 'RECTIFICADOR' clasificadas por root_cause
+cnt_rc_ROBO BATERIAS,float64,Conteo de alarmas de tipo 'ROBO BATERIAS' clasificadas por root_cause
+cnt_rc_ROBO CABLES,float64,Conteo de alarmas de tipo 'ROBO CABLES' clasificadas por root_cause
+cnt_rc_RRU,float64,Conteo de alarmas de tipo 'RRU' clasificadas por root_cause
+cnt_rc_SENSOR DE AGUA,float64,Conteo de alarmas de tipo 'SENSOR DE AGUA' clasificadas por root_cause
+cnt_rc_SENSOR DE HUMO,float64,Conteo de alarmas de tipo 'SENSOR DE HUMO' clasificadas por root_cause
+cnt_rc_SENSOR DE MOVIMIENTO,float64,Conteo de alarmas de tipo 'SENSOR DE MOVIMIENTO' clasificadas por root_cause
+cnt_rc_SENSOR DE PUERTA ABIERTA,float64,Conteo de alarmas de tipo 'SENSOR DE PUERTA ABIERTA' clasificadas por root_cause
+cnt_rc_SENSORES,float64,Conteo de alarmas de tipo 'SENSORES' clasificadas por root_cause
+cnt_rc_TRABAJO TERCEROS - CORTE ENERGIA,float64,Conteo de alarmas de tipo 'TRABAJO TERCEROS - CORTE ENERGIA' clasificadas por root_cause
+cnt_rc_TRABAJOS TERCEROS,float64,Conteo de alarmas de tipo 'TRABAJOS TERCEROS' clasificadas por root_cause
+cnt_rc_TRANSCEIVER,float64,Conteo de alarmas de tipo 'TRANSCEIVER' clasificadas por root_cause
+cnt_rc_UNIDAD CONTROL,float64,Conteo de alarmas de tipo 'UNIDAD CONTROL' clasificadas por root_cause
+cnt_rc_VARIACION VOLTAJE - SIN CAIDA,float64,Conteo de alarmas de tipo 'VARIACION VOLTAJE - SIN CAIDA' clasificadas por root_cause
+cnt_rc_VISITA TRUNCA,float64,Conteo de alarmas de tipo 'VISITA TRUNCA' clasificadas por root_cause
+cnt_srv_AA,float64,Conteo de alarmas de servicio 'AA'
+"cnt_srv_Ataque de Animales Silvestres(Roedor,ave,Insectos)",float64,"Conteo de alarmas de servicio 'Ataque de Animales Silvestres(Roedor,ave,Insectos)'"
+cnt_srv_Averia en la PINT,float64,Conteo de alarmas de servicio 'Averia en la PINT'
+cnt_srv_BB,float64,Conteo de alarmas de servicio 'BB'
+cnt_srv_CORTE ENERGIA,float64,Conteo de alarmas de servicio 'CORTE ENERGIA'
+cnt_srv_Cable Drop Averiado,float64,Conteo de alarmas de servicio 'Cable Drop Averiado'
+cnt_srv_DWDM,float64,Conteo de alarmas de servicio 'DWDM'
+cnt_srv_Daño Interno Cable Canalizado,float64,Conteo de alarmas de servicio 'Daño Interno Cable Canalizado'
+cnt_srv_Daño Interno de Cable Aereo,float64,Conteo de alarmas de servicio 'Daño Interno de Cable Aereo'
+cnt_srv_Elemento de RED FTTH averiado,float64,Conteo de alarmas de servicio 'Elemento de RED FTTH averiado'
+"cnt_srv_Fenomenos Naturales (Sismos,Huaycos,Rios etc)",float64,"Conteo de alarmas de servicio 'Fenomenos Naturales (Sismos,Huaycos,Rios etc)'"
+cnt_srv_GE_TTA,float64,Conteo de alarmas de servicio 'GE_TTA'
+cnt_srv_LT,float64,Conteo de alarmas de servicio 'LT'
+cnt_srv_MBTS,float64,Conteo de alarmas de servicio 'MBTS'
+cnt_srv_MW,float64,Conteo de alarmas de servicio 'MW'
+cnt_srv_Maniobras Autorizadas en la Red,float64,Conteo de alarmas de servicio 'Maniobras Autorizadas en la Red'
+cnt_srv_Maniobras NO Autorizadas en la Red,float64,Conteo de alarmas de servicio 'Maniobras NO Autorizadas en la Red'
+cnt_srv_Manipulacion en ODF - GPS - Caja Panduit,float64,Conteo de alarmas de servicio 'Manipulacion en ODF - GPS - Caja Panduit'
+cnt_srv_Obras civiles de terceros (Excavaciones),float64,Conteo de alarmas de servicio 'Obras civiles de terceros (Excavaciones)'
+cnt_srv_Poda de árboles,float64,Conteo de alarmas de servicio 'Poda de árboles'
+cnt_srv_RECTIFICADOR,float64,Conteo de alarmas de servicio 'RECTIFICADOR'
+cnt_srv_SE,float64,Conteo de alarmas de servicio 'SE'
+cnt_srv_SISTEMA ELECTRICO,float64,Conteo de alarmas de servicio 'SISTEMA ELECTRICO'
+cnt_srv_SISTEMA SEGURIDAD,float64,Conteo de alarmas de servicio 'SISTEMA SEGURIDAD'
+"cnt_srv_Siniestros, Accidentes de Transito, Corto Circuito",float64,"Conteo de alarmas de servicio 'Siniestros, Accidentes de Transito, Corto Circuito'"
+cnt_srv_TRABAJOS TERCEROS,float64,Conteo de alarmas de servicio 'TRABAJOS TERCEROS'
+cnt_srv_Trabajo de otros Operadores,float64,Conteo de alarmas de servicio 'Trabajo de otros Operadores'
+cnt_srv_UPS,float64,Conteo de alarmas de servicio 'UPS'
+"cnt_srv_Vandalismo(Sabotaje,Robos de Mufa, Robos de cable)",float64,"Conteo de alarmas de servicio 'Vandalismo(Sabotaje,Robos de Mufa, Robos de cable)'"

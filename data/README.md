@@ -1,0 +1,1 @@
+El archivo CSV BD_Final contiene información confidencial por lo que no se incluye en el repositorio, sus variables están descritas en el data dictionary.
